@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-github-repo",
+          title: "GitHub Repo",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/https:/github.com/parkminhyung/Multi-Factor-Alpha-Strategy";
+          },
         },{
         id: 'social-github',
         title: 'GitHub',
