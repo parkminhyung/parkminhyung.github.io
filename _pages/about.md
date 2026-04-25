@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Systematic multi-factor equity research across KRX, JPX, and CHN.
 
