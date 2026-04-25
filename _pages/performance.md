@@ -1,7 +1,9 @@
 ---
 title: "Performance"
-layout: single
+layout: page
 permalink: /performance/
+nav: true
+order: 3
 ---
 
 <!DOCTYPE html>
