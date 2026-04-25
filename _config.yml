@@ -52,7 +52,7 @@ footer_fixed: true
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
-bib_search: false  # 논문 없으니 비활성화
+bib_search: false # 논문 없으니 비활성화
 
 max_width: 930px
 
@@ -108,7 +108,7 @@ giscus:
 
 disqus_shortname:
 
-external_sources:  # 외부 소스 없으니 비워둠
+external_sources: # 외부 소스 없으니 비워둠
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -260,10 +260,34 @@ enable_publication_badges:
   inspirehep: false
 
 filtered_bibtex_keywords:
-  [abbr, abstract, additional_info, altmetric, annotation, arxiv, award,
-   award_name, bibtex_show, blog, code, dimensions, eprint, google_scholar_id,
-   hal, html, inspirehep_id, pdf, pmid, poster, preview, selected, slides,
-   supp, video, website]
+  [
+    abbr,
+    abstract,
+    additional_info,
+    altmetric,
+    annotation,
+    arxiv,
+    award,
+    award_name,
+    bibtex_show,
+    blog,
+    code,
+    dimensions,
+    eprint,
+    google_scholar_id,
+    hal,
+    html,
+    inspirehep_id,
+    pdf,
+    pmid,
+    poster,
+    preview,
+    selected,
+    slides,
+    supp,
+    video,
+    website,
+  ]
 
 max_author_limit: 3
 more_authors_animation_delay: 10
@@ -314,10 +338,10 @@ enable_google_verification: false
 enable_bing_verification: false
 enable_cookie_consent: false
 enable_masonry: true
-enable_math: true        # 수식 활성화 (팩터 설명 등에 유용)
+enable_math: true # 수식 활성화 (팩터 설명 등에 유용)
 enable_tooltips: false
-enable_darkmode: true    # 다크모드 활성화
-enable_navbar_social: true  # 네비게이션바에 SNS 링크 표시
+enable_darkmode: true # 다크모드 활성화
+enable_navbar_social: true # 네비게이션바에 SNS 링크 표시
 enable_project_categories: true
 enable_medium_zoom: true
 enable_progressbar: true
