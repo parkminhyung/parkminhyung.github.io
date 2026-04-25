@@ -31,6 +31,13 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
         },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/parkminhyung", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
