@@ -6,78 +6,72 @@ nav: true
 order: 3
 ---
 
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Virtual Trading · 2026-04-24</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-* { box-sizing: border-box; margin: 0; padding: 0; }
+.vt-report * { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --bg: #f8f8f6; --border: #e8e6e1;
   --text: #1a1917; --muted: #78776f; --faint: #b5b3ac;
   --pos: #16a34a; --neg: #e03131;
 }
-body {
+.vt-report {
   background: var(--bg); color: var(--text);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 13px; line-height: 1.6;
   max-width: 920px; margin: 0 auto; padding: 56px 40px 96px;
 }
-.pos { color: var(--pos); }
-.neg { color: var(--neg); }
-.na  { color: var(--faint); }
-.hdr { padding-bottom: 20px; margin-bottom: 32px; border-bottom: 1px solid var(--border); }
-.hdr-title { font-size: 14px; font-weight: 500; }
-.hdr-meta  { font-size: 12px; color: var(--muted); margin-top: 3px; font-weight: 300; }
-/* KPI 상단 4칸 */
-.kpi-row { display: grid; grid-template-columns: repeat(4,1fr); margin-bottom: 28px; border-bottom: 1px solid var(--border); }
-.kpi-cell { padding: 18px 20px; border-right: 1px solid var(--border); }
-.kpi-cell:first-child { padding-left: 0; }
-.kpi-cell:last-child { padding-right: 0; border-right: none; }
-.kpi-label { font-size: 10px; font-weight: 500; color: var(--faint); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-.kpi-num { font-size: 24px; font-weight: 300; line-height: 1; font-variant-numeric: tabular-nums; }
-.kpi-sub { font-size: 11px; color: var(--muted); margin-top: 4px; font-weight: 300; }
-/* 섹션 */
-.section { margin-bottom: 36px; }
-.section-title { font-size: 10px; font-weight: 500; color: var(--faint); text-transform: uppercase; letter-spacing: 1px; padding-bottom: 10px; margin-bottom: 14px; border-bottom: 1px solid var(--border); }
-/* 성과 지표 테이블 (th|td|th|td 4열) */
-.stat-tbl { width: 100%; border-collapse: collapse; table-layout: fixed; }
-.stat-tbl tr { border-bottom: 1px solid var(--border); }
-.stat-tbl tr:last-child { border-bottom: none; }
-.stat-tbl th { width: 22%; font-size: 11px; font-weight: 400; color: var(--faint); padding: 12px 12px 12px 0; text-align: left; vertical-align: top; }
-.stat-tbl td { width: 28%; padding: 12px 12px 12px 0; vertical-align: top; text-align: left; }
-.mv { font-size: 15px; font-weight: 400; font-variant-numeric: tabular-nums; color: var(--text); }
-.mn { font-size: 11px; color: var(--muted); margin-top: 3px; font-weight: 300; }
-/* 자산 배분 바 */
-.alloc-bar { height: 2px; background: var(--border); border-radius: 1px; overflow: hidden; margin: 12px 0 10px; display: flex; }
-.alloc-bar-cash  { background: var(--faint); height: 100%; }
-.alloc-bar-stock { background: var(--pos);   height: 100%; }
-.alloc-labels { font-size: 11px; color: var(--muted); display: flex; gap: 20px; font-weight: 300; }
-.alloc-labels b { color: var(--text); font-weight: 400; }
-/* 차트 */
-.chart-wrap { position: relative; height: 180px; margin-bottom: 8px; }
-.chart-legend { display: flex; gap: 20px; font-size: 11px; color: var(--muted); margin-top: 8px; font-weight: 300; }
-.leg-dot { display: inline-block; width: 12px; height: 1px; margin-right: 5px; vertical-align: middle; }
-/* 데이터 테이블 (매매/보유/이력) */
-table:not(.stat-tbl) { width: 100%; border-collapse: collapse; }
-table:not(.stat-tbl) th { font-size: 10px; font-weight: 500; color: var(--faint); text-transform: uppercase; letter-spacing: 0.8px; padding: 7px 12px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; }
-table:not(.stat-tbl) th:first-child { text-align: left; padding-left: 0; }
-table:not(.stat-tbl) td { padding: 8px 12px; border-bottom: 1px solid var(--border); text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 300; }
-table:not(.stat-tbl) td:first-child { text-align: left; color: var(--text); padding-left: 0; font-weight: 400; }
-table:not(.stat-tbl) tr:last-child td { border-bottom: none; }
-table:not(.stat-tbl) tr:hover td { color: var(--text); }
-table:not(.stat-tbl) td.pos { color: var(--pos); font-weight: 500; }
-table:not(.stat-tbl) td.neg { color: var(--neg); font-weight: 500; }
-.empty { font-size: 12px; color: var(--faint); padding: 16px 0; font-weight: 300; }
-footer { font-size: 11px; color: var(--faint); margin-top: 56px; border-top: 1px solid var(--border); padding-top: 14px; font-weight: 300; }
-@media (max-width: 900px) { body { padding: 28px 18px 56px; } .kpi-row { grid-template-columns: repeat(2,1fr); } }
+.vt-report .pos { color: var(--pos); }
+.vt-report .neg { color: var(--neg); }
+.vt-report .na { color: var(--faint); }
+.vt-report .hdr { padding-bottom: 20px; margin-bottom: 32px; border-bottom: 1px solid var(--border); }
+.vt-report .hdr-title { font-size: 14px; font-weight: 500; }
+.vt-report .hdr-meta { font-size: 12px; color: var(--muted); margin-top: 3px; font-weight: 300; }
+
+.vt-report .kpi-row { display: grid; grid-template-columns: repeat(4,1fr); margin-bottom: 28px; border-bottom: 1px solid var(--border); }
+.vt-report .kpi-cell { padding: 18px 20px; border-right: 1px solid var(--border); }
+.vt-report .kpi-cell:first-child { padding-left: 0; }
+.vt-report .kpi-cell:last-child { padding-right: 0; border-right: none; }
+.vt-report .kpi-label { font-size: 10px; font-weight: 500; color: var(--faint); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.vt-report .kpi-num { font-size: 24px; font-weight: 300; line-height: 1; font-variant-numeric: tabular-nums; }
+.vt-report .kpi-sub { font-size: 11px; color: var(--muted); margin-top: 4px; font-weight: 300; }
+
+.vt-report .section { margin-bottom: 36px; }
+.vt-report .section-title { font-size: 10px; font-weight: 500; color: var(--faint); text-transform: uppercase; letter-spacing: 1px; padding-bottom: 10px; margin-bottom: 14px; border-bottom: 1px solid var(--border); }
+
+.vt-report .stat-tbl { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.vt-report .stat-tbl tr { border-bottom: 1px solid var(--border); }
+.vt-report .stat-tbl tr:last-child { border-bottom: none; }
+.vt-report .stat-tbl th { width: 22%; font-size: 11px; font-weight: 400; color: var(--faint); padding: 12px 12px 12px 0; text-align: left; vertical-align: top; }
+.vt-report .stat-tbl td { width: 28%; padding: 12px 12px 12px 0; vertical-align: top; text-align: left; }
+.vt-report .mv { font-size: 15px; font-weight: 400; font-variant-numeric: tabular-nums; color: var(--text); }
+.vt-report .mn { font-size: 11px; color: var(--muted); margin-top: 3px; font-weight: 300; }
+
+.vt-report .alloc-bar { height: 2px; background: var(--border); border-radius: 1px; overflow: hidden; margin: 12px 0 10px; display: flex; }
+.vt-report .alloc-bar-cash { background: var(--faint); height: 100%; }
+.vt-report .alloc-bar-stock { background: var(--pos);   height: 100%; }
+.vt-report .alloc-labels { font-size: 11px; color: var(--muted); display: flex; gap: 20px; font-weight: 300; }
+.vt-report .alloc-labels b { color: var(--text); font-weight: 400; }
+
+.vt-report .chart-wrap { position: relative; height: 180px; margin-bottom: 8px; }
+.vt-report .chart-legend { display: flex; gap: 20px; font-size: 11px; color: var(--muted); margin-top: 8px; font-weight: 300; }
+.vt-report .leg-dot { display: inline-block; width: 12px; height: 1px; margin-right: 5px; vertical-align: middle; }
+
+.vt-report table:not(.stat-tbl) { width: 100%; border-collapse: collapse; }
+.vt-report table:not(.stat-tbl) th { font-size: 10px; font-weight: 500; color: var(--faint); text-transform: uppercase; letter-spacing: 0.8px; padding: 7px 12px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; }
+.vt-report table:not(.stat-tbl) th:first-child { text-align: left; padding-left: 0; }
+.vt-report table:not(.stat-tbl) td { padding: 8px 12px; border-bottom: 1px solid var(--border); text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 300; }
+.vt-report table:not(.stat-tbl) td:first-child { text-align: left; color: var(--text); padding-left: 0; font-weight: 400; }
+.vt-report table:not(.stat-tbl) tr:last-child td { border-bottom: none; }
+.vt-report table:not(.stat-tbl) tr:hover td { color: var(--text); }
+.vt-report table:not(.stat-tbl) td.pos { color: var(--pos); font-weight: 500; }
+.vt-report table:not(.stat-tbl) td.neg { color: var(--neg); font-weight: 500; }
+.vt-report .empty { font-size: 12px; color: var(--faint); padding: 16px 0; font-weight: 300; }
+.vt-report footer { font-size: 11px; color: var(--faint); margin-top: 56px; border-top: 1px solid var(--border); padding-top: 14px; font-weight: 300; }
+@media (max-width: 900px) { .vt-report { padding: 28px 18px 56px; } .vt-report .kpi-row { grid-template-columns: repeat(2,1fr); } }
 </style>
-</head>
-<body>
+<div class="vt-report">
+
 
 <div class="hdr">
   <div class="hdr-title">Virtual Trading</div>
@@ -361,5 +355,5 @@ footer { font-size: 11px; color: var(--faint); margin-top: 56px; border-top: 1px
 </div>
 
 <footer>virtual_trader.py · 2026-04-25 02:15:10 KST</footer>
-</body>
-</html>
+
+</div>
