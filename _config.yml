@@ -61,6 +61,7 @@ navbar_pages:
   - cv.md
   - performance.md
   - downloads.md
+  - repo.md
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
