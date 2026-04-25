@@ -1,7 +1,4 @@
-main:
-  - title: "About"
-    url: /about/
-  - title: "cv"
-    url: /cv/
-  - title: "Performance"
-    url: /performance/
+navbar_pages:
+  - about.md
+  - cv.md
+  - performance.md
