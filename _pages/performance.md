@@ -76,32 +76,32 @@ order: 3
 <div class="hdr">
   <div class="hdr-title">Virtual Trading</div>
   <div class="hdr-meta">
-    Daily Report · 2026-04-24 · 초기자본 ₩100,000,000
+    Daily Report · 2026-04-27 · 초기자본 ₩100,000,000
     · 보유 6/10
-    · 오늘 매수 0 · 매도 0
+    · 오늘 매수 1 · 매도 1
   </div>
 </div>
 
 <div class="kpi-row">
   <div class="kpi-cell">
     <div class="kpi-label">총 자산</div>
-    <div class="kpi-num">₩123,314,911</div>
-    <div class="kpi-sub">+₩23,314,911</div>
+    <div class="kpi-num">₩124,027,131</div>
+    <div class="kpi-sub">+₩24,027,131</div>
   </div>
   <div class="kpi-cell">
     <div class="kpi-label">누적 수익률</div>
-    <div class="kpi-num pos">+23.31%</div>
+    <div class="kpi-num pos">+24.03%</div>
     <div class="kpi-sub">초기자본 대비</div>
   </div>
   <div class="kpi-cell">
     <div class="kpi-label">일간 수익률</div>
-    <div class="kpi-num pos">+3.58%</div>
+    <div class="kpi-num pos">+0.58%</div>
     <div class="kpi-sub">전일 대비</div>
   </div>
   <div class="kpi-cell">
     <div class="kpi-label">α vs KOSPI</div>
-    <div class="kpi-num"><span class="pos">+5.12%</span></div>
-    <div class="kpi-sub">α vs KOSPI200 · <span class="pos">+3.90%</span></div>
+    <div class="kpi-num"><span class="pos">+3.29%</span></div>
+    <div class="kpi-sub">α vs KOSPI200 · <span class="pos">+1.73%</span></div>
   </div>
 </div>
 
@@ -112,23 +112,23 @@ order: 3
       <th>보유 종목</th>
       <td>
         <div class="mv">6 / 10</div>
-        <div class="mn">오늘 매수 0 · 매도 0</div>
+        <div class="mn">오늘 매수 1 · 매도 1</div>
       </td>
       <th>총 거래 비용</th>
       <td>
-        <div class="mv"><span class="neg">-₩126,728</span></div>
-        <div class="mn">수수료 ₩28,435 + 거래세 ₩98,293</div>
+        <div class="mv"><span class="neg">-₩152,067</span></div>
+        <div class="mn">수수료 ₩32,380 + 거래세 ₩119,687</div>
       </td>
     </tr>
     <tr>
       <th>승률</th>
       <td>
-        <div class="mv"><span class="pos">33.3%</span></div>
-        <div class="mn">청산 6건 기준</div>
+        <div class="mv"><span class="pos">42.9%</span></div>
+        <div class="mn">청산 7건 기준</div>
       </td>
       <th>Profit Factor</th>
       <td>
-        <div class="mv"><span class="pos">2.40</span></div>
+        <div class="mv"><span class="pos">3.68</span></div>
         <div class="mn">총수익 ÷ 총손실 (≥1 양호)</div>
       </td>
     </tr>
@@ -136,7 +136,7 @@ order: 3
       <th>평균 수익 / 손실</th>
       <td>
         <div class="mv">
-          <span class="pos">+38.79%</span>
+          <span class="pos">+39.69%</span>
           <span class="na"> / </span>
           <span class="neg">-8.08%</span>
         </div>
@@ -151,12 +151,12 @@ order: 3
     <tr>
       <th>평균 미실현 손익</th>
       <td>
-        <div class="mv"><span class="pos">+30.06%</span></div>
+        <div class="mv"><span class="pos">+23.85%</span></div>
         <div class="mn">보유 6종목 기준</div>
       </td>
       <th>평균 보유일</th>
       <td>
-        <div class="mv">7.5일</div>
+        <div class="mv">8.6일</div>
         <div class="mn">청산 종목 기준</div>
       </td>
     </tr>
@@ -164,14 +164,14 @@ order: 3
       <th>연환산 수익률 / 변동성</th>
       <td>
         <div class="mv">
-          <span class="pos">+2134.5%</span> / 51.5%
+          <span class="pos">+1938.1%</span> / 50.0%
         </div>
         <div class="mn">CAGR / 일간수익률 × √252</div>
       </td>
       <th>Sharpe / Sortino</th>
       <td>
         <div class="mv">
-          <span class="pos">41.41</span> / <span class="pos">119.23</span>
+          <span class="pos">38.70</span> / <span class="pos">108.25</span>
         </div>
         <div class="mn">Rf=3.5% / 하방 변동성 기준</div>
       </td>
@@ -180,11 +180,11 @@ order: 3
       <th>Calmar / Beta / IR</th>
       <td colspan="3">
         <div class="mv">
-          <span class="pos">433.93</span>
+          <span class="pos">394.02</span>
           &nbsp;/&nbsp;
-          0.69
+          0.67
           &nbsp;/&nbsp;
-          <span class="pos">1.51</span>
+          <span class="pos">0.96</span>
         </div>
         <div class="mn">연수익÷MDD &nbsp;·&nbsp; 시장민감도(β) &nbsp;·&nbsp; 초과수익 일관성(IR)</div>
       </td>
@@ -195,12 +195,12 @@ order: 3
 <div class="section">
   <div class="section-title">자산 배분</div>
   <div class="alloc-bar">
-    <div class="alloc-bar-cash" style="width:33.5%"></div>
-    <div class="alloc-bar-stock" style="width:66.5%"></div>
+    <div class="alloc-bar-cash" style="width:35.1%"></div>
+    <div class="alloc-bar-stock" style="width:64.9%"></div>
   </div>
   <div class="alloc-labels">
-    <span>현금 <b>₩41,355,251</b> (33.5%)</span>
-    <span>주식 <b>₩81,959,660</b> (66.5%)</span>
+    <span>현금 <b>₩43,550,411</b> (35.1%)</span>
+    <span>주식 <b>₩80,476,720</b> (64.9%)</span>
   </div>
 </div>
 
@@ -208,7 +208,7 @@ order: 3
   <div class="section-title">누적 수익률</div>
   <div class="chart-wrap"><canvas id="perfChart"></canvas></div>
   <div class="chart-legend">
-    <span><span class="leg-dot" style="background:#1a1917;"></span>포트폴리오 <b class="pos">+23.31%</b></span>
+    <span><span class="leg-dot" style="background:#1a1917;"></span>포트폴리오 <b class="pos">+24.03%</b></span>
     <span><span class="leg-dot" style="background:#a0998e;"></span>KOSPI</span>
     <span><span class="leg-dot" style="background:#c5c2bb;"></span>KOSPI200</span>
   </div>
@@ -225,7 +225,7 @@ order: 3
 
 <script>
 (function() {
-  const raw = {"labels": ["2026-04-01", "2026-04-02", "2026-04-03", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-13", "2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24"], "portfolio": [-0.0045, -1.0268, 2.3386, 2.7197, 0.9273, 9.0, 6.4642, 11.3711, 12.8303, 13.6983, 16.5186, 11.5997, 14.7263, 13.1158, 19.8409, 21.4568, 19.0547, 23.3149], "kospi": [0.0, -4.4655, -1.8508, -0.5178, 0.2935, 7.1849, 5.4631, 6.9391, 6.0219, 8.9264, 11.1831, 13.641, 13.018, 14.1731, 16.6056, 17.1433, 18.1998, 18.1965], "kospi200": [0.0, -4.8179, -1.907, -0.2457, 0.8921, 8.4746, 6.3784, 7.9795, 6.9965, 10.2182, 12.6266, 15.2401, 14.4463, 15.6984, 18.237, 18.5147, 19.8786, 19.4178], "alphaK": [-0.0045, 3.4387, 4.1894, 3.2375, 0.6338, 1.8151, 1.0011, 4.432, 6.8084, 4.7719, 5.3355, -2.0413, 1.7083, -1.0573, 3.2353, 4.3135, 0.8549, 5.1184], "alphaK200": [-0.0045, 3.7911, 4.2456, 2.9654, 0.0352, 0.5254, 0.0858, 3.3916, 5.8338, 3.4801, 3.892, -3.6404, 0.28, -2.5826, 1.6039, 2.9421, -0.8239, 3.8971]};
+  const raw = {"labels": ["2026-04-01", "2026-04-02", "2026-04-03", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-13", "2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-27"], "portfolio": [-0.0045, -1.0268, 2.3386, 2.7197, 0.9273, 9.0, 6.4642, 11.3711, 12.8303, 13.6983, 16.5186, 11.5997, 14.7263, 13.1158, 19.8409, 21.4568, 19.0547, 23.3149, 24.0271], "kospi": [0.0, -4.4655, -1.8508, -0.5178, 0.2935, 7.1849, 5.4631, 6.9391, 6.0219, 8.9264, 11.1831, 13.641, 13.018, 14.1731, 16.6056, 17.1433, 18.1998, 18.1965, 20.7409], "kospi200": [0.0, -4.8179, -1.907, -0.2457, 0.8921, 8.4746, 6.3784, 7.9795, 6.9965, 10.2182, 12.6266, 15.2401, 14.4463, 15.6984, 18.237, 18.5147, 19.8786, 19.4178, 22.3005], "alphaK": [-0.0045, 3.4387, 4.1894, 3.2375, 0.6338, 1.8151, 1.0011, 4.432, 6.8084, 4.7719, 5.3355, -2.0413, 1.7083, -1.0573, 3.2353, 4.3135, 0.8549, 5.1184, 3.2862], "alphaK200": [-0.0045, 3.7911, 4.2456, 2.9654, 0.0352, 0.5254, 0.0858, 3.3916, 5.8338, 3.4801, 3.892, -3.6404, 0.28, -2.5826, 1.6039, 2.9421, -0.8239, 3.8971, 1.7266]};
   const gridColor = "#ede9e3";
   const tickColor = "#b5b3ac";
   const tooltipOpts = {
@@ -316,24 +316,27 @@ order: 3
 </script>
 
 <div class="section">
-  <div class="section-title">오늘 매매 (2026-04-24)</div>
-  <div class='empty'>매매 없음</div>
+  <div class="section-title">오늘 매매 (2026-04-27)</div>
+  <table><thead><tr><th>구분</th><th>종목</th><th>체결가</th><th>수량</th><th>거래금액</th><th>실현손익</th><th>사유</th></tr></thead><tbody><tr><td class='neg'><b>매도</b></td><td><b>006360</b></td><td>₩40,750</td><td>350주</td><td>₩14,262,500</td><td class="pos">+41.49%</td><td>trend_exit</td></tr>
+<tr><td class='pos'><b>매수</b></td><td><b>277810</b></td><td>₩669,000</td><td>18주</td><td>₩12,042,000</td><td class="na">—</td><td></td></tr>
+</tbody></table>
 </div>
 
 <div class="section">
   <div class="section-title">보유 종목 (6)</div>
-  <table><thead><tr><th>종목</th><th>진입일</th><th>진입가</th><th>현재가</th><th>미실현손익</th><th>수량</th><th>평가금액</th><th>보유일</th><th>S1/S2</th></tr></thead><tbody><tr><td><b>098460</b></td><td>2026-04-08</td><td>₩28,350</td><td>₩42,300</td><td class='pos'>+49.21%</td><td>384</td><td>₩16,243,200</td><td>13</td><td>0.60 / 0.83</td></tr>
-<tr><td><b>006360</b></td><td>2026-04-07</td><td>₩28,800</td><td>₩40,750</td><td class='pos'>+41.49%</td><td>350</td><td>₩14,262,500</td><td>14</td><td>0.62 / 0.75</td></tr>
-<tr><td><b>222080</b></td><td>2026-04-06</td><td>₩11,740</td><td>₩16,490</td><td class='pos'>+40.46%</td><td>874</td><td>₩14,412,260</td><td>15</td><td>0.63 / 0.81</td></tr>
-<tr><td><b>361610</b></td><td>2026-04-06</td><td>₩21,800</td><td>₩27,700</td><td class='pos'>+27.06%</td><td>471</td><td>₩13,046,700</td><td>15</td><td>0.62 / 0.83</td></tr>
-<tr><td><b>281740</b></td><td>2026-04-08</td><td>₩20,150</td><td>₩24,100</td><td class='pos'>+19.60%</td><td>540</td><td>₩13,014,000</td><td>13</td><td>0.60 / 0.83</td></tr>
-<tr><td><b>030000</b></td><td>2026-04-09</td><td>₩19,140</td><td>₩19,750</td><td class='pos'>+3.19%</td><td>556</td><td>₩10,981,000</td><td>12</td><td>0.61 / 0.83</td></tr>
+  <table><thead><tr><th>종목</th><th>진입일</th><th>진입가</th><th>현재가</th><th>미실현손익</th><th>수량</th><th>평가금액</th><th>보유일</th><th>S1/S2</th></tr></thead><tbody><tr><td><b>098460</b></td><td>2026-04-08</td><td>₩28,350</td><td>₩43,500</td><td class='pos'>+53.44%</td><td>384</td><td>₩16,704,000</td><td>14</td><td>0.60 / 0.83</td></tr>
+<tr><td><b>222080</b></td><td>2026-04-06</td><td>₩11,740</td><td>₩17,130</td><td class='pos'>+45.91%</td><td>874</td><td>₩14,971,620</td><td>16</td><td>0.63 / 0.81</td></tr>
+<tr><td><b>361610</b></td><td>2026-04-06</td><td>₩21,800</td><td>₩27,100</td><td class='pos'>+24.31%</td><td>471</td><td>₩12,764,100</td><td>16</td><td>0.62 / 0.83</td></tr>
+<tr><td><b>281740</b></td><td>2026-04-08</td><td>₩20,150</td><td>₩24,100</td><td class='pos'>+19.60%</td><td>540</td><td>₩13,014,000</td><td>14</td><td>0.60 / 0.83</td></tr>
+<tr><td><b>030000</b></td><td>2026-04-09</td><td>₩19,140</td><td>₩19,750</td><td class='pos'>+3.19%</td><td>556</td><td>₩10,981,000</td><td>13</td><td>0.61 / 0.83</td></tr>
+<tr><td><b>277810</b></td><td>2026-04-27</td><td>₩669,000</td><td>₩669,000</td><td class='pos'>+0.00%</td><td>18</td><td>₩12,042,000</td><td>1</td><td>0.62 / 0.61</td></tr>
 </tbody></table>
 </div>
 
 <div class="section">
   <div class="section-title">일별 성과 이력 (최근 20일)</div>
-  <table><thead><tr><th>날짜</th><th>총자산</th><th>일간</th><th>누적</th><th>α KOSPI</th><th>α KOSPI200</th><th>보유</th><th>매수</th><th>매도</th></tr></thead><tbody><tr><td>2026-04-24</td><td>₩123,314,911</td><td class="pos">+3.58%</td><td class="pos">+23.31%</td><td class="pos">+5.12%</td><td class="pos">+3.90%</td><td>6</td><td class='pos'>0</td><td class='neg'>0</td></tr>
+  <table><thead><tr><th>날짜</th><th>총자산</th><th>일간</th><th>누적</th><th>α KOSPI</th><th>α KOSPI200</th><th>보유</th><th>매수</th><th>매도</th></tr></thead><tbody><tr><td>2026-04-27</td><td>₩124,027,131</td><td class="pos">+0.58%</td><td class="pos">+24.03%</td><td class="pos">+3.29%</td><td class="pos">+1.73%</td><td>6</td><td class='pos'>1</td><td class='neg'>1</td></tr>
+<tr><td>2026-04-24</td><td>₩123,314,911</td><td class="pos">+3.58%</td><td class="pos">+23.31%</td><td class="pos">+5.12%</td><td class="pos">+3.90%</td><td>6</td><td class='pos'>0</td><td class='neg'>0</td></tr>
 <tr><td>2026-04-23</td><td>₩119,054,651</td><td class="neg">-1.98%</td><td class="pos">+19.05%</td><td class="pos">+0.85%</td><td class="neg">-0.82%</td><td>6</td><td class='pos'>0</td><td class='neg'>0</td></tr>
 <tr><td>2026-04-22</td><td>₩121,456,801</td><td class="pos">+1.35%</td><td class="pos">+21.46%</td><td class="pos">+4.31%</td><td class="pos">+2.94%</td><td>6</td><td class='pos'>0</td><td class='neg'>1</td></tr>
 <tr><td>2026-04-21</td><td>₩119,840,883</td><td class="pos">+5.95%</td><td class="pos">+19.84%</td><td class="pos">+3.24%</td><td class="pos">+1.60%</td><td>7</td><td class='pos'>0</td><td class='neg'>0</td></tr>
@@ -354,6 +357,6 @@ order: 3
 </tbody></table>
 </div>
 
-<footer>virtual_trader.py · 2026-04-25 02:15:10 KST</footer>
+<footer>virtual_trader.py · 2026-04-27 16:02:42 KST</footer>
 
 </div>
