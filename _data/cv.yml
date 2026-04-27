@@ -54,7 +54,7 @@ cv:
           - Built local-LLM workflows with Llama and Qwen
           - Automated parsing and extraction of key insights from reports
         start_date: 2025-01
-        end_date: 2026-01
+        end_date: 2026-04
 
     Skills:
       - bullet: "**Machine Learning:** Python, NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM, CatBoost, Optuna"
