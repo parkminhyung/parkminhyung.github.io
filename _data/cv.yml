@@ -3,7 +3,6 @@ cv:
   label: Quantitative Researcher
   email: pmh621@naver.com
   location: Seoul, South Korea
-  image: ""
   summary: Quantitative researcher and AI developer leveraging machine learning to build factor-based trading strategies
 
   sections:
@@ -24,48 +23,65 @@ cv:
 
     Projects:
       - name: Factor-based Trading Strategies
-        summary: Factor-based trading strategies using quantitative methods to predict future returns
+        summary: Developed quantitative factor models and machine learning based trading strategies.
         highlights:
-          - Developed factor models combining fundamental and technical indicators
-          - Implemented machine learning pipelines with LightGBM and ensemble methods
-        start_date: 2023-01-01
-        end_date: 2026-01-01
+          - Built factor models using fundamental and technical indicators
+          - Implemented LightGBM and ensemble pipelines for signal generation
+        start_date: 2023-01
+        end_date: 2026-01
+
       - name: Sentiment Analysis with LLMs
-        summary: Natural language processing for financial sentiment analysis
+        summary: Built NLP pipelines for financial sentiment analysis using large language models.
         highlights:
-          - Built sentiment models using transformer architectures
-          - Integrated sentiment signals into trading strategies
-        start_date: 2024-01-01
-        end_date: 2026-01-01
+          - Developed transformer-based sentiment classification workflows
+          - Integrated sentiment signals into systematic research
+        start_date: 2024-01
+        end_date: 2026-01
+
       - name: Industrial Report Summarization
-        summary: Automated download and summarization of industrial reports using local LLMs
+        summary: Automated downloading and summarization of industry reports using local LLMs.
         highlights:
-          - Deployed local LLMs (Llama, Qwen) for document processing
-          - Created pipeline for automatic report parsing and key insight extraction
-        start_date: 2025-01-01
-        end_date: 2026-01-01
+          - Built local-LLM workflows with Llama and Qwen
+          - Automated parsing and extraction of key insights from reports
+        start_date: 2025-01
+        end_date: 2026-01
 
     Skills:
       - name: Machine Learning
         level: Expert
-        icon: fa-solid fa-hashtag
-        keywords: "Python, NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM, CatBoost, Optuna"
+        keywords:
+          - Python
+          - NumPy
+          - Pandas
+          - Scikit-learn
+          - TensorFlow
+          - PyTorch
+          - XGBoost
+          - LightGBM
+          - CatBoost
+          - Optuna
+
       - name: Finance
         level: Expert
-        icon: fa-solid fa-hashtag
-        keywords: "Portfolio Management, Risk Management, Factor Models, Financial Modeling, Quantitative Analysis"
+        keywords:
+          - Factor Models
+          - Portfolio Management
+          - Risk Management
+          - Financial Modeling
+          - Quantitative Analysis
+
       - name: Statistics
         level: Expert
-        icon: fa-solid fa-hashtag
-        keywords: "Econometrics, Time Series Analysis, Statistical Modeling, Hypothesis Testing"
+        keywords:
+          - Econometrics
+          - Time Series Analysis
+          - Statistical Modeling
+          - Hypothesis Testing
 
-  languages:
-    - name: English
-      level: Fluent
-      icon: fa-solid fa-language
-    - name: Korean
-      level: Native
-      icon: fa-solid fa-language
-    - name: Chinese
-      level: Fluent
-      icon: fa-solid fa-language
+    Languages:
+      - name: English
+        level: Fluent
+      - name: Korean
+        level: Native
+      - name: Chinese
+        level: Fluent
