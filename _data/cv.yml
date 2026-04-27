@@ -17,14 +17,10 @@ cv:
         end_date: 2015
 
     Certificates:
-      - title: Certified International Investment Analyst (CIIA)
-        date: Nov, 2021
-        issuer: ACIIA
-        icon: fa-solid fa-certificate
-      - title: Korea Certified Investment Analyst (KCIA)
-        date: Nov, 2021
-        issuer: Korea Investment Analyst Association
-        icon: fa-solid fa-certificate
+      - name: Certified International Investment Analyst (CIIA) — ACIIA
+        date: 2021-11
+      - name: Korea Certified Investment Analyst (KCIA) — Korea Investment Analyst Association
+        date: 2021-11
 
     Projects:
       - name: Factor-based Trading Strategies
