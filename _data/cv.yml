@@ -1,5 +1,5 @@
 cv:
-  name: MINHYUNG PARK,CIIA
+  name: MINHYUNG PARK, CIIA
   label: Quantitative Researcher
   email: pmh621@naver.com
   location: Seoul, South Korea
@@ -16,47 +16,54 @@ cv:
         start_date: 2011
         end_date: 2015
 
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
     Certificates:
       - title: Certified International Investment Analyst (CIIA)
         date: Nov, 2021
         issuer: ACIIA
         icon: fa-solid fa-certificate
-
       - title: Korea Certified Investment Analyst (KCIA)
         date: Nov, 2021
         issuer: Korea Investment Analyst Association
-        icon: fa-solid fa-certificate 
+        icon: fa-solid fa-certificate
+
+    Projects:
+      - name: Factor-based Trading Strategies
+        summary: Factor-based trading strategies using quantitative methods to predict future returns
+        highlights:
+          - Developed factor models combining fundamental and technical indicators
+          - Implemented machine learning pipelines with LightGBM and ensemble methods
+        start_date: 2023-01-01
+        end_date: 2026-01-01
+      - name: Sentiment Analysis with LLMs
+        summary: Natural language processing for financial sentiment analysis
+        highlights:
+          - Built sentiment models using transformer architectures
+          - Integrated sentiment signals into trading strategies
+        start_date: 2024-01-01
+        end_date: 2026-01-01
+      - name: Industrial Report Summarization
+        summary: Automated download and summarization of industrial reports using local LLMs
+        highlights:
+          - Deployed local LLMs (Llama, Qwen) for document processing
+          - Created pipeline for automatic report parsing and key insight extraction
+        start_date: 2025-01-01
+        end_date: 2026-01-01
 
     Skills:
       - name: Machine Learning
         level: Expert
         icon: fa-solid fa-hashtag
-        keywords: "Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras, PyTorch, XGBoost, LightGBM, CatBoost, Optuna, Ray, Dask, Spark, Hadoop, Hive, Pig, Sqoop, Flask, Django, REST, GraphQL, Docker, Kubernetes, AWS, Azure, GCP, Terraform, Ansible, Jenkins, Git, GitHub, GitLab, Bitbucket, SVN, CVS, Mercurial, Bazaar, CVS, SVN, Git, GitHub, GitLab, Bitbucket, SVN, CVS, Mercurial, Bazaar"
+        keywords: "Python, NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM, CatBoost, Optuna"
       - name: Finance
         level: Expert
         icon: fa-solid fa-hashtag
-        keywords: "Corporate Finance, Portfolio Management, Risk Management, Investment Analysis, Financial Modeling, Financial Statement Analysis, Financial Planning, Financial Reporting, Financial Analysis, Financial Management, Financial Economics, Financial Mathematics, Financial Engineering, Financial Statistics, Financial Accounting, Financial Reporting, Financial Analysis, Financial Management, Financial Economics, Financial Mathematics, Financial Engineering, Financial Statistics, Financial Accounting, Financial Reporting, Financial Analysis, Financial Management, Financial Economics, Financial Mathematics, Financial Engineering, Financial Statistics, Financial Accounting"
-      - name: Economics
-        level: Expert
-        icon: fa-solid fa-hashtag
-        keywords: "Microeconomics, Macroeconomics, Econometrics, Economic Modeling, Economic Analysis, Economic Planning, Economic Policy, Economic Development, Economic Growth, Economic Stability, Economic Security, Economic Justice, Economic Freedom, Economic Equality, Economic Efficiency, Economic Productivity, Economic Efficiency, Economic Productivity, Economic Efficiency, Economic Productivity"
+        keywords: "Portfolio Management, Risk Management, Factor Models, Financial Modeling, Quantitative Analysis"
       - name: Statistics
         level: Expert
         icon: fa-solid fa-hashtag
-        keywords: "Statistics, Econometrics, Economic Modeling, Economic Analysis, Economic Planning, Economic Policy, Economic Development, Economic Growth, Economic Stability, Economic Security, Economic Justice, Economic Freedom, Economic Equality, Economic Efficiency, Economic Productivity, Economic Efficiency, Economic Productivity, Economic Efficiency, Economic Productivity"
+        keywords: "Econometrics, Time Series Analysis, Statistical Modeling, Hypothesis Testing"
 
-  Languages:
+  languages:
     - name: English
       level: Fluent
       icon: fa-solid fa-language
@@ -66,25 +73,3 @@ cv:
     - name: Chinese
       level: Fluent
       icon: fa-solid fa-language
-
-    Projects:
-      - name: Factor-based Trading Strategies
-        summary: Factor-based trading strategies are a type of quantitative investing strategy that uses factors to predict future returns.
-        highlights:
-          - Factor-based Trading Strategies
-          - Generative Factor-based Trading Strategies
-        start_date: 2023-01-01
-        end_date: 2026-01-01
-      - name: Sentiment Analysis
-        summary: Sentiment analysis is a type of natural language processing that uses machine learning to analyze and understand the sentiment of text.
-        highlights:
-          - Sentiment Analysis
-          - Sentiment Analysis with LLMs
-        start_date: 2024-01-01
-        end_date: 2026-01-01
-      - name: Industrial report summarization
-        summary: Industrial report summarization is a type of natural language processing that uses LLMs to downalod automatically and summarize industrial reports.
-        highlights:
-          - Industrial report summarization with local LLMs (Llama, Qwen, etc.)
-        start_date: 2025-01-01
-        end_date: 2026-01-01
