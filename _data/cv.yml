@@ -57,17 +57,11 @@ cv:
         end_date: 2026-01
 
     Skills:
-      - label: Machine Learning
-        details: Python, NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM, CatBoost, Optuna
-      - label: Finance
-        details: Factor Models, Portfolio Management, Risk Management, Financial Modeling, Quantitative Analysis
-      - label: Statistics
-        details: Econometrics, Time Series Analysis, Statistical Modeling, Hypothesis Testing
+      - bullet: "**Machine Learning:** Python, NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM, CatBoost, Optuna"
+      - bullet: "**Finance:** Factor Models, Portfolio Management, Risk Management, Financial Modeling, Quantitative Analysis"
+      - bullet: "**Statistics:** Econometrics, Time Series Analysis, Statistical Modeling, Hypothesis Testing"
 
     Languages:
-      - label: English
-        details: Fluent
-      - label: Korean
-        details: Native
-      - label: Chinese
-        details: Fluent
+      - bullet: "**English:** Fluent"
+      - bullet: "**Korean:** Native"
+      - bullet: "**Chinese:** Fluent"
