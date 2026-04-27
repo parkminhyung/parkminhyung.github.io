@@ -1,29 +1,39 @@
 cv:
   name: MINHYUNG PARK, CIIA
-  label: Quantitative Researcher
+  headline: Quantitative Researcher
   email: pmh621@naver.com
   location: Seoul, South Korea
-  summary: Quantitative researcher and AI developer leveraging machine learning to build factor-based trading strategies
 
   sections:
+    Profile:
+      - Quantitative researcher and AI developer leveraging machine learning to build factor-based trading strategies.
+
     Education:
       - institution: Tsinghua University, SEM
         location: Beijing, China
         url: https://www.tsinghua.edu.cn/
         area: Finance and Economics
-        studyType: Bachelor of Economics
-        start_date: 2011
-        end_date: 2015
+        degree: Bachelor of Economics
+        start_date: 2011-09
+        end_date: 2015-06
 
     Certificates:
       - name: Certified International Investment Analyst (CIIA) — ACIIA
         date: 2021-11
       - name: Korea Certified Investment Analyst (KCIA) — Korea Investment Analyst Association
-        date: 2021-11
+        date: 2021-04
+      - name: TensorFlow Developer Certificate — Google
+        date: 2021-04
+      - name: Machine Learning for Finance — Coursera
+        date: 2021-02
+      - name: Certified Research Analyst (CRA) — Korea Financial Investment Association
+        date: 2020-07
+      - name: Certified Investment Manager (CIM) — Korea Financial Investment Association
+        date: 2020-06
 
     Projects:
       - name: Factor-based Trading Strategies
-        summary: Developed quantitative factor models and machine learning based trading strategies.
+        summary: Developed quantitative factor models and machine-learning-based trading strategies.
         highlights:
           - Built factor models using fundamental and technical indicators
           - Implemented LightGBM and ensemble pipelines for signal generation
@@ -47,41 +57,17 @@ cv:
         end_date: 2026-01
 
     Skills:
-      - name: Machine Learning
-        level: Expert
-        keywords:
-          - Python
-          - NumPy
-          - Pandas
-          - Scikit-learn
-          - TensorFlow
-          - PyTorch
-          - XGBoost
-          - LightGBM
-          - CatBoost
-          - Optuna
-
-      - name: Finance
-        level: Expert
-        keywords:
-          - Factor Models
-          - Portfolio Management
-          - Risk Management
-          - Financial Modeling
-          - Quantitative Analysis
-
-      - name: Statistics
-        level: Expert
-        keywords:
-          - Econometrics
-          - Time Series Analysis
-          - Statistical Modeling
-          - Hypothesis Testing
+      - label: Machine Learning
+        details: Python, NumPy, Pandas, Scikit-learn, TensorFlow, PyTorch, XGBoost, LightGBM, CatBoost, Optuna
+      - label: Finance
+        details: Factor Models, Portfolio Management, Risk Management, Financial Modeling, Quantitative Analysis
+      - label: Statistics
+        details: Econometrics, Time Series Analysis, Statistical Modeling, Hypothesis Testing
 
     Languages:
-      - name: English
-        level: Fluent
-      - name: Korean
-        level: Native
-      - name: Chinese
-        level: Fluent
+      - label: English
+        details: Fluent
+      - label: Korean
+        details: Native
+      - label: Chinese
+        details: Fluent
