@@ -16,14 +16,28 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/downloads/";
           },
-        },{id: "nav-performance",
-          title: "Performance",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/performance/";
-          },
-        },{id: "nav-cv",
+        },{id: "dropdown-krx",
+              title: "KRX",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/performance/";
+              },
+            },{id: "dropdown-jpx",
+              title: "JPX",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/performance-jpx/";
+              },
+            },{id: "dropdown-chn",
+              title: "CHN",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/performance-chn/";
+              },
+            },{id: "nav-cv",
           title: "CV",
           description: "",
           section: "Navigation",
