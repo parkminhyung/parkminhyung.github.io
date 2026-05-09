@@ -209,7 +209,27 @@ description: 가상매매(virtual trading) 거래·성과 로그 데이터 다�
       </div>
       <span class="dl-section-sub">CSI300 / SSE Composite alpha</span>
     </div>
-    <div class="dl-empty">데이터 준비 중 — 추후 업로드 예정</div>
+    <table class="dl-tbl">
+      <thead>
+        <tr>
+          <th style="width:32%">파일</th>
+          <th style="width:52%">설명</th>
+          <th style="width:16%; text-align:right">다운로드</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="file">virtual_trade_log.csv</td>
+          <td class="desc">가상매매 체결 내역 — 종목, 진입/청산일, 가격, 수량, 손익</td>
+          <td class="act"><a class="dl-btn" href="{{ '/assets/downloads/chn/virtual_trade_log.csv' | relative_url }}" download>CSV</a></td>
+        </tr>
+        <tr>
+          <td class="file">virtual_perf_log.csv</td>
+          <td class="desc">일별 성과 로그 — 총자산, 일간/누적 수익률, CSI300/SSE Composite 대비 알파</td>
+          <td class="act"><a class="dl-btn" href="{{ '/assets/downloads/chn/virtual_perf_log.csv' | relative_url }}" download>CSV</a></td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <div class="dl-foot">
