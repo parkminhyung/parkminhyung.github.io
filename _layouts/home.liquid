@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include head.liquid %}
+  </head>
+
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %} home-page">
+    {% include header.liquid %}
+
+    <main class="home-stage" role="main">
+      {{ content }}
+    </main>
+
+    {% include footer.liquid %}
+    {% include scripts.liquid %}
+  </body>
+</html>
