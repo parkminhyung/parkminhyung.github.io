@@ -3,20 +3,13 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "About",
+    id: "nav-home",
+    title: "Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-downloads",
-          title: "Downloads",
-          description: "가상매매(virtual trading) 거래·성과 로그 데이터 다운로드.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/downloads/";
-          },
-        },{id: "dropdown-krx",
+  },{id: "dropdown-krx",
               title: "KRX",
               description: "",
               section: "Dropdown",
@@ -37,12 +30,19 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/performance-chn/";
               },
-            },{id: "nav-cv",
-          title: "CV",
+            },{id: "nav-downloads",
+          title: "Downloads",
+          description: "가상매매(virtual trading) 거래·성과 로그 데이터 다운로드.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/downloads/";
+          },
+        },{id: "nav-about",
+          title: "About",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/about/";
           },
         },{id: "nav-github-repo",
           title: "GitHub Repo",
