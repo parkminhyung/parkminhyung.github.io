@@ -242,6 +242,14 @@ ul.task-list input[type="checkbox"] {
 // Cinematic homepage
 
 .home-page {
+  --global-bg-color: #050705;
+  --global-card-bg-color: #050705;
+  --global-text-color: #f8f8f2;
+  --global-text-color-light: rgba(255, 255, 255, 0.7);
+  --global-divider-color: rgba(255, 255, 255, 0.14);
+  --global-theme-color: #d8ff73;
+  --global-hover-color: #d8ff73;
+  --global-hover-text-color: #050705;
   background: #050705;
 
   #navbar {

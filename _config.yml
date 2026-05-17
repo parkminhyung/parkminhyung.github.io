@@ -336,7 +336,7 @@ enable_cookie_consent: false
 enable_masonry: true
 enable_math: true # 수식 활성화 (팩터 설명 등에 유용)
 enable_tooltips: false
-enable_darkmode: true # 다크모드 활성화
+enable_darkmode: false # 사이트는 라이트 테마로 고정
 enable_navbar_social: true # 네비게이션바에 SNS 링크 표시
 enable_project_categories: true
 enable_medium_zoom: true
