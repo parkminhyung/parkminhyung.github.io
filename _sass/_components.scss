@@ -262,6 +262,24 @@ ul.task-list input[type="checkbox"] {
     color: #d8ff73 !important;
   }
 
+  #navbar .navbar-brand.social a i::before,
+  #light-toggle,
+  #search-toggle,
+  #light-toggle .fa-half-sun-moon::before,
+  #light-toggle .fa-half-sun-moon::after {
+    color: rgba(255, 255, 255, 0.88) !important;
+  }
+
+  #navbar .navbar-brand.social a:hover i::before,
+  #light-toggle:hover,
+  #search-toggle:hover {
+    color: #d8ff73 !important;
+  }
+
+  #navbar .navbar-toggler .icon-bar {
+    background-color: rgba(255, 255, 255, 0.88);
+  }
+
   .home-stage {
     min-height: 100vh;
   }
@@ -276,6 +294,15 @@ ul.task-list input[type="checkbox"] {
   isolation: isolate;
   color: #f8f8f2;
   background: #050705;
+
+  h1,
+  p,
+  span,
+  strong,
+  em,
+  a {
+    color: inherit;
+  }
 }
 
 .cinema-scenes,
@@ -478,6 +505,12 @@ ul.task-list input[type="checkbox"] {
   &.is-visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  span,
+  strong,
+  em {
+    color: inherit;
   }
 
   a {
