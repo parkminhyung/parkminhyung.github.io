@@ -1,10 +1,10 @@
 ---
-title: "Performance"
+title: "KRX"
 layout: page
 permalink: /performance/
 ---
 
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 .vt-report * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -74,32 +74,32 @@ permalink: /performance/
 <div class="hdr">
   <div class="hdr-title">Virtual Trading</div>
   <div class="hdr-meta">
-    Daily Report · 2026-05-11 · 초기자본 ₩100,000,000
-    · 보유 0/10
-    · 오늘 매수 0 · 매도 0
+    Daily Report · 2026-05-15 · 초기자본 ₩100,000,000
+    · 보유 7/30
+    · 오늘 매수 3 · 매도 0
   </div>
 </div>
 
 <div class="kpi-row">
   <div class="kpi-cell">
     <div class="kpi-label">총 자산</div>
-    <div class="kpi-num">₩100,000,000</div>
-    <div class="kpi-sub">+₩0</div>
+    <div class="kpi-num">₩114,616,763</div>
+    <div class="kpi-sub">+₩14,616,763</div>
   </div>
   <div class="kpi-cell">
     <div class="kpi-label">누적 수익률</div>
-    <div class="kpi-num pos">+0.00%</div>
+    <div class="kpi-num pos">+14.62%</div>
     <div class="kpi-sub">초기자본 대비</div>
   </div>
   <div class="kpi-cell">
     <div class="kpi-label">일간 수익률</div>
-    <div class="kpi-num na">—</div>
+    <div class="kpi-num neg">-0.89%</div>
     <div class="kpi-sub">전일 대비</div>
   </div>
   <div class="kpi-cell">
     <div class="kpi-label">α vs KOSPI</div>
-    <div class="kpi-num"><span class="pos">+0.00%</span></div>
-    <div class="kpi-sub">α vs KOSPI200 · <span class="pos">+0.00%</span> &nbsp;·&nbsp; α vs KOSDAQ · <span class="pos">+0.00%</span></div>
+    <div class="kpi-num"><span class="neg">-21.21%</span></div>
+    <div class="kpi-sub">α vs KOSPI200 · <span class="neg">-27.27%</span> &nbsp;·&nbsp; α vs KOSDAQ · <span class="pos">+14.05%</span></div>
   </div>
 </div>
 
@@ -109,24 +109,24 @@ permalink: /performance/
     <tr>
       <th>보유 종목</th>
       <td>
-        <div class="mv">0 / 10</div>
-        <div class="mn">오늘 매수 0 · 매도 0</div>
+        <div class="mv">7 / 30</div>
+        <div class="mn">오늘 매수 3 · 매도 0</div>
       </td>
       <th>총 거래 비용</th>
       <td>
-        <div class="mv"><span class="neg">-₩0</span></div>
-        <div class="mn">수수료 ₩0 + 거래세 ₩0</div>
+        <div class="mv"><span class="neg">-₩198,016</span></div>
+        <div class="mn">수수료 ₩27,666 + 거래세 ₩170,350</div>
       </td>
     </tr>
     <tr>
       <th>승률</th>
       <td>
-        <div class="mv"><span class="na">—</span></div>
-        <div class="mn">청산 0건 기준</div>
+        <div class="mv"><span class="pos">73.3%</span></div>
+        <div class="mn">청산 30건 기준</div>
       </td>
       <th>Profit Factor</th>
       <td>
-        <div class="mv"><span class="na">—</span></div>
+        <div class="mv"><span class="pos">8.27</span></div>
         <div class="mn">총수익 ÷ 총손실 (≥1 양호)</div>
       </td>
     </tr>
@@ -134,27 +134,27 @@ permalink: /performance/
       <th>평균 수익 / 손실</th>
       <td>
         <div class="mv">
-          <span class="pos">—</span>
+          <span class="pos">+12.19%</span>
           <span class="na"> / </span>
-          <span class="neg">—</span>
+          <span class="neg">-4.05%</span>
         </div>
         <div class="mn">이긴 거래 / 진 거래</div>
       </td>
       <th>MDD</th>
       <td>
-        <div class="mv"><span class="na">—</span></div>
+        <div class="mv"><span class="neg">-1.44%</span></div>
         <div class="mn">고점 대비 최대 하락</div>
       </td>
     </tr>
     <tr>
       <th>평균 미실현 손익</th>
       <td>
-        <div class="mv"><span class="na">—</span></div>
-        <div class="mn">보유 0종목 기준</div>
+        <div class="mv"><span class="pos">+42.83%</span></div>
+        <div class="mn">보유 7종목 기준</div>
       </td>
       <th>평균 보유일</th>
       <td>
-        <div class="mv">—</div>
+        <div class="mv">14.8일</div>
         <div class="mn">청산 종목 기준</div>
       </td>
     </tr>
@@ -162,14 +162,14 @@ permalink: /performance/
       <th>연환산 수익률 / 변동성</th>
       <td>
         <div class="mv">
-          <span class="na">—</span> / —
+          <span class="pos">+214.5%</span> / 16.5%
         </div>
         <div class="mn">CAGR / 일간수익률 × √252</div>
       </td>
       <th>Sharpe / Sortino</th>
       <td>
         <div class="mv">
-          <span class="na">—</span> / <span class="na">—</span>
+          <span class="pos">12.79</span> / <span class="pos">34.10</span>
         </div>
         <div class="mn">Rf=3.5% / 하방 변동성 기준</div>
       </td>
@@ -178,11 +178,11 @@ permalink: /performance/
       <th>Calmar / Beta / IR</th>
       <td colspan="3">
         <div class="mv">
-          <span class="na">—</span>
+          <span class="pos">149.05</span>
           &nbsp;/&nbsp;
-          —
+          -0.01
           &nbsp;/&nbsp;
-          <span class="na">—</span>
+          <span class="neg">-3.27</span>
         </div>
         <div class="mn">연수익÷MDD &nbsp;·&nbsp; 시장민감도(β) &nbsp;·&nbsp; 초과수익 일관성(IR)</div>
       </td>
@@ -193,31 +193,184 @@ permalink: /performance/
 <div class="section">
   <div class="section-title">자산 배분</div>
   <div class="alloc-bar">
-    <div class="alloc-bar-cash" style="width:100.0%"></div>
-    <div class="alloc-bar-stock" style="width:0.0%"></div>
+    <div class="alloc-bar-cash" style="width:74.8%"></div>
+    <div class="alloc-bar-stock" style="width:25.2%"></div>
   </div>
   <div class="alloc-labels">
-    <span>현금 <b>₩100,000,000</b> (100.0%)</span>
-    <span>주식 <b>₩0</b> (0.0%)</span>
+    <span>현금 <b>₩85,696,533</b> (74.8%)</span>
+    <span>주식 <b>₩28,920,230</b> (25.2%)</span>
   </div>
 </div>
 
 <div class="section">
-  <div class="section-title">오늘 매매 (2026-05-11)</div>
-  <div class='empty'>매매 없음</div>
+  <div class="section-title">누적 수익률</div>
+  <div class="chart-wrap"><canvas id="perfChart"></canvas></div>
+  <div class="chart-legend">
+    <span><span class="leg-dot" style="background:#1a1917;"></span>포트폴리오 <b class="pos">+14.62%</b></span>
+    <span><span class="leg-dot" style="background:#a0998e;"></span>KOSPI</span>
+    <span><span class="leg-dot" style="background:#c5c2bb;"></span>KOSPI200</span>
+    <span><span class="leg-dot" style="background:#7c8ca4;"></span>KOSDAQ</span>
+  </div>
 </div>
 
 <div class="section">
-  <div class="section-title">보유 종목 (0)</div>
-  <div class='empty'>보유 없음</div>
+  <div class="section-title">알파 (포트폴리오 - 벤치마크)</div>
+  <div class="chart-wrap"><canvas id="alphaChart"></canvas></div>
+  <div class="chart-legend">
+    <span><span class="leg-dot" style="background:#a0998e;"></span>α vs KOSPI</span>
+    <span><span class="leg-dot" style="background:#c5c2bb;"></span>α vs KOSPI200</span>
+    <span><span class="leg-dot" style="background:#7c8ca4;"></span>α vs KOSDAQ</span>
+  </div>
+</div>
+
+<script>
+(function() {
+  const raw = {"labels": ["2026-04-01", "2026-04-02", "2026-04-03", "2026-04-06", "2026-04-07", "2026-04-08", "2026-04-09", "2026-04-10", "2026-04-13", "2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-27", "2026-04-28", "2026-04-29", "2026-04-30", "2026-05-04", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15"], "portfolio": [-0.0012, -0.4244, -0.4418, -0.1944, -0.6852, -0.1472, -0.0066, 0.6357, 0.3183, 2.4513, 4.4984, 7.6419, 7.5778, 8.2911, 10.5909, 11.8141, 10.3747, 12.4177, 13.767, 13.1508, 13.5407, 12.6753, 12.9216, 13.3174, 13.0716, 14.0336, 15.7933, 14.9065, 15.6845, 15.6444, 14.6168], "kospi": [0.0, -4.4655, -1.8508, -0.5178, 0.2935, 7.1849, 5.4631, 6.9391, 6.0219, 8.9264, 11.1831, 13.641, 13.018, 13.514, 16.6056, 17.1433, 18.1998, 18.1965, 20.7409, 21.2152, 22.1257, 20.4459, 26.6174, 34.7867, 36.7122, 36.8573, 42.7755, 39.5066, 43.1728, null, 35.8269], "kospi200": [0.0, -4.8179, -1.907, -0.2457, 0.8921, 8.4746, 6.3784, 7.9795, 6.9965, 10.2182, 12.6266, 15.2401, 14.4463, 14.9796, 18.237, 18.5147, 19.8786, 19.4178, 22.3005, 22.7551, 23.684, 21.9097, 28.9762, 38.8025, 41.2882, 41.4492, 48.8548, 45.4106, 49.9275, null, 41.8841], "kosdaq": [0.0, -5.3612, -4.6973, -6.1648, -7.118, -2.3589, -3.5998, -2.0203, -1.4639, 0.5107, 3.2477, 4.192, 4.8254, 5.2563, 5.6308, 5.8181, 5.2079, 7.8536, 9.855, 8.9054, 9.3247, 6.8242, 8.7405, 8.4207, 7.4361, 8.2012, 8.1671, 5.6541, 5.4427, null, 0.5716], "alphaK": [-0.0012, 4.0411, 1.409, 0.3234, -0.9787, -7.3321, -5.4697, -6.3034, -5.7036, -6.4751, -6.6847, -5.9991, -5.4402, -5.2229, -6.0147, -5.3292, -7.8251, -5.7788, -6.9739, -8.0644, -8.585, -7.7706, -13.6958, -21.4693, -23.6406, -22.8237, -26.9822, -24.6001, -27.4883, null, -21.2101], "alphaK200": [-0.0012, 4.3935, 1.4652, 0.0513, -1.5773, -8.6218, -6.385, -7.3438, -6.6782, -7.7669, -8.1282, -7.5982, -6.8685, -6.6885, -7.6461, -6.7006, -9.5039, -7.0001, -8.5335, -9.6043, -10.1433, -9.2344, -16.0546, -25.4851, -28.2166, -27.4156, -33.0615, -30.5041, -34.243, null, -27.2673], "alphaKosdaq": [-0.0012, 4.9368, 4.2555, 5.9704, 6.4328, 2.2117, 3.5932, 2.656, 1.7822, 1.9406, 1.2507, 3.4499, 2.7524, 3.0348, 4.9601, 5.996, 5.1668, 4.5641, 3.912, 4.2454, 4.216, 5.8511, 4.1811, 4.8967, 5.6355, 5.8324, 7.6262, 9.2524, 10.2418, null, 14.0452]};
+  const gridColor = "#ede9e3";
+  const tickColor = "#b5b3ac";
+  const tooltipOpts = {
+    backgroundColor: "#ffffff",
+    borderColor: "#e8e6e1",
+    borderWidth: 1,
+    titleColor: "#1a1917",
+    bodyColor: "#78776f",
+    padding: 10,
+    callbacks: {
+      label: c => {
+        const v = c.parsed.y;
+        if (v == null) return null;
+        return ` ${
+          c.dataset.label
+        }: ${v >= 0 ? "+" : ""}${v.toFixed(2)}%`;
+      }
+    }
+  };
+  const scaleOpts = {
+    x: {
+      ticks: { color: tickColor, maxTicksLimit: 8, maxRotation: 0, font: { size: 10 } },
+      grid: { color: gridColor },
+      border: { color: gridColor }
+    },
+    y: {
+      ticks: { color: tickColor, font: { size: 10 }, callback: v => (v >= 0 ? "+" : "") + v.toFixed(1) + "%" },
+      grid: { color: gridColor },
+      border: { color: gridColor, dash: [3, 3] }
+    }
+  };
+  new Chart(document.getElementById("perfChart"), {
+    type: "line",
+    data: {
+      labels: raw.labels,
+      datasets: [
+        { label: "포트폴리오", data: raw.portfolio, borderColor: "#1a1917", backgroundColor: "rgba(26,25,23,0.04)", borderWidth: 1.5, pointRadius: 0, tension: 0.2, fill: true },
+        { label: "KOSPI", data: raw.kospi, borderColor: "#a0998e", backgroundColor: "transparent", borderWidth: 1, pointRadius: 0, tension: 0.2, spanGaps: true },
+        { label: "KOSPI200", data: raw.kospi200, borderColor: "#c5c2bb", backgroundColor: "transparent", borderWidth: 1, pointRadius: 0, tension: 0.2, spanGaps: true },
+        { label: "KOSDAQ", data: raw.kosdaq, borderColor: "#7c8ca4", backgroundColor: "transparent", borderWidth: 1, pointRadius: 0, tension: 0.2, spanGaps: true }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: { legend: { display: false }, tooltip: tooltipOpts },
+      scales: scaleOpts
+    }
+  });
+
+  new Chart(document.getElementById("alphaChart"), {
+    type: "line",
+    data: {
+      labels: raw.labels,
+      datasets: [
+        {
+          label: "α vs KOSPI",
+          data: raw.alphaK,
+          borderColor: "#a0998e",
+          backgroundColor: ctx => (ctx.parsed && ctx.parsed.y >= 0 ? "rgba(45,125,70,0.08)" : "rgba(192,57,43,0.08)"),
+          borderWidth: 1.5,
+          pointRadius: 0,
+          tension: 0.2,
+          fill: "origin",
+          spanGaps: true
+        },
+        {
+          label: "α vs KOSPI200",
+          data: raw.alphaK200,
+          borderColor: "#c5c2bb",
+          backgroundColor: "transparent",
+          borderWidth: 1,
+          pointRadius: 0,
+          tension: 0.2,
+          spanGaps: true
+        },
+        {
+          label: "α vs KOSDAQ",
+          data: raw.alphaKosdaq,
+          borderColor: "#7c8ca4",
+          backgroundColor: "transparent",
+          borderWidth: 1,
+          pointRadius: 0,
+          tension: 0.2,
+          spanGaps: true
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: { legend: { display: false }, tooltip: tooltipOpts },
+      scales: scaleOpts
+    }
+  });
+})();
+</script>
+
+<div class="section">
+  <div class="section-title">오늘 매매 (2026-05-15)</div>
+  <table><thead><tr><th>구분</th><th>종목</th><th>체결가</th><th>수량</th><th>거래금액</th><th>실현손익</th><th>사유</th></tr></thead><tbody><tr><td class='pos'><b>매수</b></td><td><b>090710</b></td><td>₩12,890</td><td>237주</td><td>₩3,054,930</td><td class="na">—</td><td></td></tr>
+<tr><td class='pos'><b>매수</b></td><td><b>003280</b></td><td>₩2,750</td><td>1,111주</td><td>₩3,055,250</td><td class="na">—</td><td></td></tr>
+<tr><td class='pos'><b>매수</b></td><td><b>026960</b></td><td>₩25,550</td><td>119주</td><td>₩3,040,450</td><td class="na">—</td><td></td></tr>
+</tbody></table>
+</div>
+
+<div class="section">
+  <div class="section-title">보유 종목 (7)</div>
+  <table><thead><tr><th>종목</th><th>진입일</th><th>진입가</th><th>현재가</th><th>미실현손익</th><th>수량</th><th>평가금액</th><th>보유일</th><th>S1/S2</th></tr></thead><tbody><tr><td><b>336260</b></td><td>2026-04-08</td><td>₩36,600</td><td>₩84,000</td><td class='pos'>+129.51%</td><td>72</td><td>₩6,048,000</td><td>26</td><td>0.57 / 0.63</td></tr>
+<tr><td><b>036930</b></td><td>2026-04-10</td><td>₩63,400</td><td>₩138,000</td><td class='pos'>+117.67%</td><td>42</td><td>₩5,796,000</td><td>24</td><td>0.56 / 0.62</td></tr>
+<tr><td><b>067310</b></td><td>2026-04-09</td><td>₩29,800</td><td>₩52,400</td><td class='pos'>+75.84%</td><td>89</td><td>₩4,663,600</td><td>25</td><td>0.58 / 0.63</td></tr>
+<tr><td><b>128940</b></td><td>2026-05-14</td><td>₩449,500</td><td>₩466,000</td><td class='pos'>+3.67%</td><td>7</td><td>₩3,262,000</td><td>2</td><td>0.55 / 0.60</td></tr>
+<tr><td><b>090710</b></td><td>2026-05-15</td><td>₩12,890</td><td>₩12,890</td><td class='pos'>+0.00%</td><td>237</td><td>₩3,054,930</td><td>1</td><td>0.55 / 0.66</td></tr>
+<tr><td><b>003280</b></td><td>2026-05-15</td><td>₩2,750</td><td>₩2,750</td><td class='pos'>+0.00%</td><td>1,111</td><td>₩3,055,250</td><td>1</td><td>0.54 / 0.63</td></tr>
+<tr><td><b>026960</b></td><td>2026-05-15</td><td>₩25,550</td><td>₩25,550</td><td class='pos'>+0.00%</td><td>119</td><td>₩3,040,450</td><td>1</td><td>0.55 / 0.59</td></tr>
+</tbody></table>
 </div>
 
 <div class="section">
   <div class="section-title">일별 성과 이력 (최근 20일)</div>
-  <table><thead><tr><th>날짜</th><th>총자산</th><th>일간</th><th>누적</th><th>α KOSPI</th><th>α KOSPI200</th><th>α KOSDAQ</th><th>보유</th><th>매수</th><th>매도</th></tr></thead><tbody><tr><td>2026-05-11</td><td>₩100,000,000</td><td class="na">—</td><td class="na">0.00%</td><td class="na">0.00%</td><td class="na">0.00%</td><td class="na">0.00%</td><td>0</td><td class='pos'>0</td><td class='neg'>0</td></tr>
+  <table><thead><tr><th>날짜</th><th>총자산</th><th>일간</th><th>누적</th><th>α KOSPI</th><th>α KOSPI200</th><th>α KOSDAQ</th><th>보유</th><th>매수</th><th>매도</th></tr></thead><tbody><tr><td>2026-05-15</td><td>₩114,616,763</td><td class="neg">-0.89%</td><td class="pos">+14.62%</td><td class="neg">-21.21%</td><td class="neg">-27.27%</td><td class="pos">+14.05%</td><td>7</td><td class='pos'>3</td><td class='neg'>0</td></tr>
+<tr><td>2026-05-14</td><td>₩115,644,436</td><td class="neg">-0.03%</td><td class="pos">+15.64%</td><td class="na">—</td><td class="na">—</td><td class="na">—</td><td>4</td><td class='pos'>1</td><td class='neg'>0</td></tr>
+<tr><td>2026-05-13</td><td>₩115,684,458</td><td class="pos">+0.68%</td><td class="pos">+15.68%</td><td class="neg">-27.49%</td><td class="neg">-34.24%</td><td class="pos">+10.24%</td><td>3</td><td class='pos'>0</td><td class='neg'>0</td></tr>
+<tr><td>2026-05-12</td><td>₩114,906,508</td><td class="neg">-0.77%</td><td class="pos">+14.91%</td><td class="neg">-24.60%</td><td class="neg">-30.50%</td><td class="pos">+9.25%</td><td>3</td><td class='pos'>0</td><td class='neg'>1</td></tr>
+<tr><td>2026-05-11</td><td>₩115,793,333</td><td class="pos">+1.54%</td><td class="pos">+15.79%</td><td class="neg">-26.98%</td><td class="neg">-33.06%</td><td class="pos">+7.63%</td><td>4</td><td class='pos'>0</td><td class='neg'>0</td></tr>
+<tr><td>2026-05-08</td><td>₩114,033,583</td><td class="pos">+0.85%</td><td class="pos">+14.03%</td><td class="neg">-22.82%</td><td class="neg">-27.42%</td><td class="pos">+5.83%</td><td>4</td><td class='pos'>0</td><td class='neg'>0</td></tr>
+<tr><td>2026-05-07</td><td>₩113,071,633</td><td class="neg">-0.22%</td><td class="pos">+13.07%</td><td class="neg">-23.64%</td><td class="neg">-28.22%</td><td class="pos">+5.64%</td><td>4</td><td class='pos'>0</td><td class='neg'>5</td></tr>
+<tr><td>2026-05-06</td><td>₩113,317,446</td><td class="pos">+0.35%</td><td class="pos">+13.32%</td><td class="neg">-21.47%</td><td class="neg">-25.49%</td><td class="pos">+4.90%</td><td>9</td><td class='pos'>0</td><td class='neg'>2</td></tr>
+<tr><td>2026-05-04</td><td>₩112,921,639</td><td class="pos">+0.22%</td><td class="pos">+12.92%</td><td class="neg">-13.70%</td><td class="neg">-16.05%</td><td class="pos">+4.18%</td><td>11</td><td class='pos'>0</td><td class='neg'>3</td></tr>
+<tr><td>2026-04-30</td><td>₩112,675,255</td><td class="neg">-0.76%</td><td class="pos">+12.68%</td><td class="neg">-7.77%</td><td class="neg">-9.23%</td><td class="pos">+5.85%</td><td>14</td><td class='pos'>0</td><td class='neg'>8</td></tr>
+<tr><td>2026-04-29</td><td>₩113,540,729</td><td class="pos">+0.34%</td><td class="pos">+13.54%</td><td class="neg">-8.58%</td><td class="neg">-10.14%</td><td class="pos">+4.22%</td><td>22</td><td class='pos'>0</td><td class='neg'>2</td></tr>
+<tr><td>2026-04-28</td><td>₩113,150,757</td><td class="neg">-0.54%</td><td class="pos">+13.15%</td><td class="neg">-8.06%</td><td class="neg">-9.60%</td><td class="pos">+4.25%</td><td>24</td><td class='pos'>0</td><td class='neg'>1</td></tr>
+<tr><td>2026-04-27</td><td>₩113,767,017</td><td class="pos">+1.20%</td><td class="pos">+13.77%</td><td class="neg">-6.97%</td><td class="neg">-8.53%</td><td class="pos">+3.91%</td><td>25</td><td class='pos'>0</td><td class='neg'>1</td></tr>
+<tr><td>2026-04-24</td><td>₩112,417,703</td><td class="pos">+1.85%</td><td class="pos">+12.42%</td><td class="neg">-5.78%</td><td class="neg">-7.00%</td><td class="pos">+4.56%</td><td>26</td><td class='pos'>1</td><td class='neg'>1</td></tr>
+<tr><td>2026-04-23</td><td>₩110,374,708</td><td class="neg">-1.29%</td><td class="pos">+10.37%</td><td class="neg">-7.83%</td><td class="neg">-9.50%</td><td class="pos">+5.17%</td><td>26</td><td class='pos'>0</td><td class='neg'>1</td></tr>
+<tr><td>2026-04-22</td><td>₩111,814,085</td><td class="pos">+1.11%</td><td class="pos">+11.81%</td><td class="neg">-5.33%</td><td class="neg">-6.70%</td><td class="pos">+6.00%</td><td>27</td><td class='pos'>0</td><td class='neg'>0</td></tr>
+<tr><td>2026-04-21</td><td>₩110,590,915</td><td class="pos">+2.12%</td><td class="pos">+10.59%</td><td class="neg">-6.01%</td><td class="neg">-7.65%</td><td class="pos">+4.96%</td><td>27</td><td class='pos'>0</td><td class='neg'>2</td></tr>
+<tr><td>2026-04-20</td><td>₩108,291,053</td><td class="pos">+0.66%</td><td class="pos">+8.29%</td><td class="neg">-5.22%</td><td class="neg">-6.69%</td><td class="pos">+3.03%</td><td>29</td><td class='pos'>0</td><td class='neg'>0</td></tr>
+<tr><td>2026-04-17</td><td>₩107,577,773</td><td class="neg">-0.06%</td><td class="pos">+7.58%</td><td class="neg">-5.44%</td><td class="neg">-6.87%</td><td class="pos">+2.75%</td><td>29</td><td class='pos'>0</td><td class='neg'>1</td></tr>
+<tr><td>2026-04-16</td><td>₩107,641,938</td><td class="pos">+3.01%</td><td class="pos">+7.64%</td><td class="neg">-6.00%</td><td class="neg">-7.60%</td><td class="pos">+3.45%</td><td>30</td><td class='pos'>0</td><td class='neg'>0</td></tr>
 </tbody></table>
 </div>
 
-<footer>virtual_trader.py · 2026-05-11 16:04:25 KST</footer>
+<footer>virtual_trader.py · 2026-05-16 16:29:31 KST</footer>
 
 </div>

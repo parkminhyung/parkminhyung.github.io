@@ -3,7 +3,7 @@ title: "Downloads"
 layout: page
 permalink: /downloads/
 nav: true
-order: 4
+nav_order: 3
 description: 가상매매(virtual trading) 거래·성과 로그 데이터 다운로드.
 ---
 
@@ -233,7 +233,7 @@ description: 가상매매(virtual trading) 거래·성과 로그 데이터 다�
   </section>
 
   <div class="dl-foot">
-    데이터는 <a href="{{ '/performance/' | relative_url }}">Performance</a> 페이지에 게시되는 일일 보고서와 동일한 시점의 스냅샷입니다.
+    데이터는 <a href="{{ '/performance/' | relative_url }}">Live Reports</a> 페이지에 게시되는 일일 보고서와 동일한 시점의 스냅샷입니다.
   </div>
 
 </div>

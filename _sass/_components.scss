@@ -239,6 +239,440 @@ ul.task-list input[type="checkbox"] {
   transform: translate(-50%, -50%);
 }
 
+// Research-terminal homepage
+
+.lab-home {
+  display: grid;
+  gap: 2rem;
+  padding: 1.4rem 0 4rem;
+}
+
+.lab-hero {
+  max-width: 48rem;
+  padding: 1rem 0 0.8rem;
+
+  h1 {
+    max-width: 42rem;
+    margin: 0.6rem 0 1rem;
+    color: var(--global-text-color);
+    font-size: clamp(2rem, 4vw, 3.35rem);
+    font-weight: 450;
+    letter-spacing: -0.06em;
+    line-height: 0.98;
+  }
+
+  p {
+    max-width: 40rem;
+    margin: 0;
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+}
+
+.lab-kicker,
+.lab-market-head > span,
+.lab-market-label,
+.lab-card span,
+.lab-note span {
+  color: var(--global-text-color-light);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.lab-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+}
+
+.lab-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0 0.95rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  color: var(--global-text-color);
+  font-size: 0.86rem;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+}
+
+.lab-btn-primary {
+  border-color: var(--global-text-color);
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    background: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+  }
+}
+
+.lab-market-shell {
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1.35rem;
+  background:
+    radial-gradient(circle at top right, rgba(120, 119, 111, 0.14), transparent 34%),
+    var(--global-card-bg-color);
+}
+
+.lab-market-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.lab-tabs {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.22rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+
+  button {
+    min-width: 3.1rem;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--global-text-color-light);
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  button.is-active {
+    background: var(--global-text-color);
+    color: var(--global-bg-color);
+  }
+}
+
+.lab-market-panel {
+  display: none;
+  grid-template-columns: minmax(0, 1.4fr) minmax(14rem, 0.9fr);
+  gap: 1.4rem;
+  align-items: end;
+  padding: 1.35rem 1.2rem 1.2rem;
+
+  &.is-active {
+    display: grid;
+    animation: lab-fade 0.22s ease both;
+  }
+
+  h2 {
+    margin: 0.35rem 0 0.7rem;
+    color: var(--global-text-color);
+    font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+  }
+
+  p {
+    max-width: 34rem;
+    margin: 0;
+    color: var(--global-text-color-light);
+    line-height: 1.7;
+  }
+
+  > a {
+    grid-column: 1 / -1;
+    width: fit-content;
+    color: var(--global-text-color);
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+.lab-sparkline {
+  grid-column: 1 / -1;
+  height: 4.5rem;
+  padding-top: 0.25rem;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  line {
+    stroke: var(--global-divider-color);
+    stroke-width: 1;
+  }
+
+  polyline {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+.lab-metrics {
+  display: grid;
+  gap: 0.7rem;
+
+  div {
+    display: grid;
+    gap: 0.12rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  span {
+    color: var(--global-text-color-light);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  strong {
+    color: var(--global-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  strong[data-tone="pos"] {
+    color: #16a34a;
+  }
+
+  strong[data-tone="neg"] {
+    color: #e03131;
+  }
+}
+
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.lab-notes {
+  display: grid;
+  gap: 1rem;
+  padding-top: 0.25rem;
+}
+
+.lab-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  span {
+    color: var(--global-text-color-light);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: var(--global-text-color);
+    font-size: 0.84rem;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+.lab-notes-list {
+  display: grid;
+  border-top: 1px solid var(--global-divider-color);
+
+  a {
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: 0.8rem 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+    color: inherit;
+    text-decoration: none;
+
+    &:hover strong {
+      color: var(--global-theme-color);
+    }
+  }
+
+  time {
+    color: var(--global-text-color-light);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+  }
+
+  strong {
+    color: var(--global-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  p {
+    grid-column: 2;
+    margin: 0;
+    color: var(--global-text-color-light);
+    line-height: 1.6;
+  }
+}
+
+.lab-notes-empty {
+  padding: 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1.1rem;
+
+  strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--global-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  p {
+    max-width: 34rem;
+    margin: 0;
+    color: var(--global-text-color-light);
+    line-height: 1.65;
+  }
+}
+
+.lab-card {
+  display: grid;
+  gap: 0.55rem;
+  min-height: 11rem;
+  padding: 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1.1rem;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    background-color 0.2s ease;
+
+  h3 {
+    margin: 0.1rem 0 0;
+    color: var(--global-text-color);
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    margin: 0;
+    color: var(--global-text-color-light);
+    line-height: 1.65;
+  }
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: inherit;
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+}
+
+.lab-note {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  p {
+    max-width: 36rem;
+    margin: 0.45rem 0 0;
+    color: var(--global-text-color);
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  small {
+    max-width: 16rem;
+    color: var(--global-text-color-light);
+    line-height: 1.5;
+    text-align: right;
+  }
+}
+
+@keyframes lab-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 760px) {
+  .lab-market-head,
+  .lab-note {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .lab-market-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-notes-list a {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-notes-list p {
+    grid-column: 1;
+  }
+
+  .lab-card {
+    min-height: auto;
+  }
+
+  .lab-note small {
+    text-align: left;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .wechat-modal > img {
     width: 100%;
