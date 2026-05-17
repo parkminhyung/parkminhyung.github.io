@@ -282,6 +282,11 @@ ul.task-list input[type="checkbox"] {
 
   .home-stage {
     min-height: 100vh;
+
+    &,
+    * {
+      color: #f8f8f2 !important;
+    }
   }
 }
 
@@ -373,7 +378,7 @@ ul.task-list input[type="checkbox"] {
 
 .cinema-eyebrow {
   margin: 0 0 1rem;
-  color: rgba(255, 255, 255, 0.64);
+  color: rgba(255, 255, 255, 0.64) !important;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.24em;
@@ -399,7 +404,7 @@ ul.task-list input[type="checkbox"] {
   p {
     max-width: 34rem;
     margin: 1.2rem 0 0;
-    color: rgba(255, 255, 255, 0.74);
+    color: rgba(255, 255, 255, 0.74) !important;
     font-size: clamp(0.98rem, 1.8vw, 1.1rem);
     line-height: 1.75;
   }
@@ -538,21 +543,21 @@ ul.task-list input[type="checkbox"] {
   }
 
   span {
-    color: rgba(255, 255, 255, 0.38);
+    color: rgba(255, 255, 255, 0.38) !important;
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.18em;
   }
 
   strong {
-    color: #f8f8f2;
+    color: #f8f8f2 !important;
     font-size: 1.12rem;
     font-weight: 500;
     letter-spacing: -0.03em;
   }
 
   em {
-    color: rgba(255, 255, 255, 0.58);
+    color: rgba(255, 255, 255, 0.58) !important;
     font-style: normal;
     line-height: 1.65;
   }
