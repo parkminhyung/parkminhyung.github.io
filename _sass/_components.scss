@@ -257,8 +257,34 @@ ul.task-list input[type="checkbox"] {
     color: rgba(255, 255, 255, 0.88) !important;
   }
 
+  #navbar .navbar-nav > .nav-item > .nav-link,
+  #navbar .navbar-brand.social a,
+  #navbar .navbar-brand.social a i,
+  #navbar .navbar-brand.social a i::before,
+  #search-toggle,
+  #search-toggle .nav-link,
+  #search-toggle .nav-link i,
+  #search-toggle .nav-link i::before,
+  #light-toggle,
+  #light-toggle i,
+  #light-toggle i::before,
+  #light-toggle i::after {
+    color: rgba(255, 255, 255, 0.88) !important;
+  }
+
   #navbar .nav-item.active .nav-link,
-  #navbar .nav-link:hover {
+  #navbar .nav-link:hover,
+  #navbar .navbar-brand.social a:hover,
+  #navbar .navbar-brand.social a:hover i,
+  #navbar .navbar-brand.social a:hover i::before,
+  #search-toggle:hover,
+  #search-toggle:hover .nav-link,
+  #search-toggle:hover .nav-link i,
+  #search-toggle:hover .nav-link i::before,
+  #light-toggle:hover,
+  #light-toggle:hover i,
+  #light-toggle:hover i::before,
+  #light-toggle:hover i::after {
     color: #d8ff73 !important;
   }
 
@@ -278,6 +304,21 @@ ul.task-list input[type="checkbox"] {
 
   #navbar .navbar-toggler .icon-bar {
     background-color: rgba(255, 255, 255, 0.88);
+  }
+
+  #navbar .dropdown-menu {
+    background: rgba(8, 10, 8, 0.96);
+    border-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+  }
+
+  #navbar .dropdown-menu .dropdown-item {
+    color: rgba(255, 255, 255, 0.88) !important;
+
+    &:hover {
+      color: #d8ff73 !important;
+      background: rgba(216, 255, 115, 0.08);
+    }
   }
 
   .home-stage {
